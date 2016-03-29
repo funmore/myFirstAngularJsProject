@@ -1,0 +1,34 @@
+<!doctype html>
+<html  ng-app="Email">
+<head>
+	<meta charset="UTF-8">
+	<title>email</title>
+	<script src="scripts/angular.js"></script>
+	<script src="scripts/angular-route.js"></script>
+	<script src="scripts/app.js"></script>
+	<script src="scripts/controllers.js"></script>
+	<script src="scripts/directives.js"></script>
+</head>
+<body>
+	<h1>A-MAIL</h1>
+	<div ng-view></div>
+	<btn-directive></btn-directive>
+	<div ng-controller="directiveController">
+		<button ng-click="clickUnfocused()">Not focused</button>
+		<button ngbk-focus ng-click="clickFocused()">I'm very focused</button>
+		<div>{{message.text}}</div>
+	</div>
+</body>
+</html>
+
+<!-- <!doctype html>
+<html ng-app="AMail">
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src='mail/controllers.js'></script>
+  </head>
+  <body>
+    <h1>A-Mail</h1>
+    <div ng-view></div>
+  </body>
+</html> -->
